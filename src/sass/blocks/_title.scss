@@ -5,6 +5,11 @@
     &__white {
         color: $white-color;
     }
+    &_fz12 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
     &_fz14 {
         font-weight: 500;
         font-size: 14px;
@@ -13,6 +18,12 @@
     &_fz16 {
         font-size: 16px;
         line-height: 24px;
+        font-weight: 700;
+    }
+    &_fz36 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
     }
     &_fz48 {
         font-size: 48px;
