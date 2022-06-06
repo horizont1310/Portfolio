@@ -34,6 +34,15 @@
     &__wrapper {
         margin-left: 20px;
         padding: 0 36px;
+        .stick {
+            display: block;
+            width: 92px;
+            height: 0px;
+            margin-top: 4px;
+            background-color: $main-color;
+            border: 3px solid $main-color;
+            border-radius: 10px;
+        }
     }
     &__skills {
         display: grid;
