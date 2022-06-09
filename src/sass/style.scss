@@ -15,9 +15,21 @@
     margin: 0 auto;
 }
 
+.stick {
+    display: block;
+    width: 92px;
+    height: 3px;
+    margin: 25px auto 0 auto;
+    background-color: $sky-color;
+    border: 3px solid $sky-color;
+    border-radius: 10px;
+}
+
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
 @import 'blocks/introduce';
 @import 'blocks/menu';
+@import 'blocks/resume';
+@import 'blocks/use';

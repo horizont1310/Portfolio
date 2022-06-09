@@ -1,29 +1,30 @@
 .introduce {    
     padding-top: 70px;
-    background: url('../img/bg/myself.jpg') no-repeat 50%/cover;
+    min-height: 100vh;
+    background: url('../img/bg/me-3.jpg') no-repeat 50%/cover;
     .container {
         display: flex;
     }
     &__img {
         img {
-            width: 400px;
+            width: 100%;
             height: 600px;
         }
     }    
     &__myself {
-        margin-left: 20px;
+        margin-left: 30px;
         width: 740px;
         border-radius: 10px;
-        color: #fff;
-        background-color: rgba(0,0,0,.8);
+        color: $black-color;
+        background-color: $bg-white-color;
         &_title {
             padding-top: 50px;
             position: relative;
             margin-bottom: 15px;
             @include before_circle;
             &::before {
-                top: 57%;
-                left: -11px;
+                top: 58%;
+                left: -14px;
             }
             z-index: 2;  
         }
@@ -35,36 +36,41 @@
         margin-left: 20px;
         padding: 0 36px;
         .stick {
-            display: block;
-            width: 92px;
-            height: 0px;
-            margin-top: 4px;
-            background-color: $main-color;
-            border: 3px solid $main-color;
-            border-radius: 10px;
-        }
+            margin: 0;
+        }        
     }
     &__skills {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 30px;
+        grid-auto-rows: 1fr;
+        gap: 30px 30px;
         margin-top: 30px;
     }
     &__skill {
         display: grid;
         grid-template-columns: 1fr 10fr;
         position: relative;
-            @include before_circle;
-            &::before {
-                top: -3%;
-                left: -28px;
-            }
-            z-index: 2;  
+        @include before_circle;
+        &::before {
+            top: 0;
+            left: -28px;
+        }
+        z-index: 2;  
         img {
             margin-top: 50%;
             transform: translateX(-50%);
         }
         
+    }
+    &__fz12 {
+        margin-top: 6px;
+        width: 250px;
+        color: $black-color;
+    }
+    &__fz14 {
+        width: 250px;
+        font-weight: 700;
+        color: $main-color;
     }
 }
