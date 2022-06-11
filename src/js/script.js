@@ -1,7 +1,8 @@
 const hamburger = document.querySelector('.hamburger'),
         menu = document.querySelector('.menu'),
-        closeElem = document.querySelector('.menu__close');
-        closeList = document.querySelector('.menu__list');
+        closeElem = document.querySelector('.menu__close'),
+        closeList = document.querySelector('.menu__list'),
+        closeSection = document.querySelector('.menu__overlay');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -12,6 +13,10 @@ closeElem.addEventListener('click', () => {
 });
 
 closeList.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+
+closeSection.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 

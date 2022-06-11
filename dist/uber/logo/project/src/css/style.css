@@ -1,0 +1,44 @@
+body {
+    background-color:rgb(210, 178, 240);
+}
+
+h1 {
+    color:red;
+    font-size: 40px; /* размер текста */
+}
+
+.introduction {
+    color: rgb(14, 145, 3);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+.mistake {
+    text-align: right;
+}
+
+.text {
+    text-decoration: line-through;
+}
+
+.italic {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 300px
+}
+
+.contents {
+    color: red;
+    font-size: 40px;
+}

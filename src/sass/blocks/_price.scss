@@ -1,0 +1,44 @@
+.price {
+    min-height: 100vh;
+    background: url('../img/bg/money-1.jpg') no-repeat 50%/cover;
+    .container {
+        padding-top: 30px;
+    }
+    &__title {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        @include before_circle;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 410px);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: space-around;
+        row-gap: 40px;
+        background-color: $bg-white-color;        
+        border-radius: 5px;
+        /* min-height: 500px; */
+        margin-top: 9%;
+        padding: 45px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        row-gap: 8px;
+        border: solid $sky-color;
+        padding: 7px;
+        &-text {
+            grid-column: 1 / 3;
+        }
+        &-tag {
+            justify-self: end;
+        }
+    }
+}
