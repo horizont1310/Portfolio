@@ -1,5 +1,5 @@
 .hamburger {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 30px;
     height: 21px;
@@ -24,7 +24,7 @@
     top: 0;
     left: -100%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 10;
     visibility: hidden;
     opacity: 0;
@@ -40,7 +40,7 @@
         height: 100%;
         padding-top: 140px;
         padding-left: 40px;
-        background: url('../img/bg/menu-bg.jpg') no-repeat 50%/cover;
+        background: url('../img/bg/menu-bg.webp') no-repeat 50%/cover;
         transition: all 0.6s;
         z-index: 10;
     }
@@ -55,6 +55,7 @@
         }
     }
     &__list {
+        position: static;
         list-style-type: none;
         padding-left: 35px;
     }
@@ -72,7 +73,7 @@
             width: 15px;
             height: 15px;
             border-radius: 100%;
-            border: 1px solid #000000;
+            border: 1px solid $white-color;
             transition: all 0.6s;
         }
         &:hover {
@@ -103,44 +104,7 @@
         align-items: center;
         img {
             &:hover {
-                animation: wiggle 2s linear infinite;
-                @keyframes wiggle {
-                    /* 0%, 100% {
-                        width: 30px;
-                        height: 30px;
-                    } */
-                    0%, 7% {
-                        transform: rotateZ(0); 
-                        width: 23px;
-                        height: 23px;                     
-                    }
-                    15% {
-                        transform: rotateZ(-15deg);
-                        width: 27px;
-                        height: 27px;
-                    }
-                    20% {
-                        transform: rotateZ(10deg);
-                        width: 33px;
-                        height: 33px;
-                    }
-                    25% {
-                        transform: rotateZ(-10deg);
-                        width: 37px;
-                        height: 37px;
-                    }
-                    30% {
-                        transform: rotateZ(6deg);
-                        width: 40px;
-                        height: 40px;
-                    }
-                    35% {
-                        transform: rotateZ(-4deg);
-                    }
-                    40%, 100% {
-                        transform: rotateZ(0);
-                    }
-                  }                
+                width: 33px;
             }
         }
     }

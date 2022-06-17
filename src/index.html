@@ -99,7 +99,10 @@
     <section class="introduce" id="me">
         <div class="container">
             <div class="introduce__img">
-                <img src="img/main_photo.jpg" alt="my photo">
+                <picture>
+                    <source type="image/webp" srcset="img/main_photo.webp">
+                    <img src="img/main_photo.webp" alt="my photo">
+                </picture>
             </div>
             <div class="introduce__myself">
                 <div class="introduce__wrapper">
@@ -151,7 +154,7 @@
                                     <div class="resume__item-icon">
                                         <img src="icons/experience/university.svg" alt="university">
                                     </div>
-                                    <h4 class="title title_fz14">Kharkiv National Medical University</h4>
+                                    <h4 class="title title_fz14 resume__fz14">Kharkiv National Medical University</h4>
                                     <div class="resume__item-location">Диплом специалиста | Харьков (2012-2018)</div>
                                 </div>
                                 <div class="resume__item-body">
@@ -165,7 +168,7 @@
                                     <div class="resume__item-icon">
                                         <img src="icons/experience/courses.svg" alt="courses">
                                     </div>
-                                    <h4 class="title title_fz14">Udemy</h4>
+                                    <h4 class="title title_fz14 resume__fz14">Udemy</h4>
                                     <div class="resume__item-location">Курсы по Web-разработке</div>
                                 </div>
                                 <div class="resume__item-body">
@@ -185,7 +188,7 @@
                                     <div class="resume__item-icon">
                                         <img src="icons/experience/developer.svg" alt="developer">
                                     </div>
-                                    <h4 class="title title_fz14">Front-End Developer</h4>
+                                    <h4 class="title title_fz14 resume__fz14">Front-End Developer</h4>
                                     <div class="resume__item-location">EPAM | Москва (2018-2019)</div>
                                 </div>
                                 <div class="resume__item-body">
@@ -199,7 +202,7 @@
                                     <div class="resume__item-icon">
                                         <img src="icons/experience/designer.svg" alt="designer">
                                     </div>
-                                    <h4 class="title title_fz14">UI/UX Designer</h4>
+                                    <h4 class="title title_fz14 resume__fz14">UI/UX Designer</h4>
                                     <div class="resume__item-location">Squad Team | Москва (2018)</div>
                                 </div>
                                 <div class="resume__item-body">
@@ -336,22 +339,22 @@
 
             <div class="portfolio__wrapper">
                 <a href="/uber" class="portfolio__item">
-                    <img src="img/works/uber.jpg" alt="uber">
+                    <img src="img/works/uber.webp" alt="uber">
                 </a>
                 <a href="/pulse" class="portfolio__item">
-                    <img src="img/works/pulse.jpg" alt="pulse">
+                    <img src="img/works/pulse.webp" alt="pulse">
                 </a>
                 <a href="#" class="portfolio__item">
-                    <img src="img/works/bread.jpg" alt="test">
+                    <img src="img/works/bread.webp" alt="test">
                 </a>
                 <a href="#" class="portfolio__item-plans">
-                    <img src="img/works/plans.jpg" alt="test">
+                    <img src="img/works/plans.webp" alt="test">
                 </a>
                 <a href="#" class="portfolio__item">
-                    <img src="img/works/ipad.jpg" alt="test">
+                    <img src="img/works/ipad.webp" alt="test">
                 </a>
                 <a href="#" class="portfolio__item-mac">
-                    <img src="img/works/mac.jpg" alt="test">
+                    <img src="img/works/mac.webp" alt="test">
                 </a>
             </div>
         </div>
@@ -378,7 +381,7 @@
                     <div class="title title_fz16 price__item-tag">от 20000 руб.</div>
                     <div class="title title_fz14 price__item-text">Сайт для вашего бизнеса или компании</div>
                 </div>
-                <div class="price__item">
+                <div class="price__item price__item-app">
                     <div class="title title_fz16 price__item-title">Android/IOS Приложение</div>
                     <div class="title title_fz16 price__item-tag">от 25000 руб.</div>
                     <div class="title title_fz14 price__item-text">Приложение для смартфона любой ОС</div>
@@ -401,7 +404,10 @@
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__img">
-                    <img src="img/contacts-photo.jpg" alt="my photo">
+                    <picture>
+                        <source type="image/webp" srcset="img/contacts-photo.webp">
+                        <img src="img/contacts-photo.webp" alt="my photo">
+                    </picture>                    
                 </div>
                 <div class="contacts__descr">
                     <div class="title_fz16 contacts__title">Контакты</div>
@@ -424,11 +430,11 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input required name="name" id="name" type="text">
+                            <input required name="name" id="name" placeholder="Alex" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input required name="email" id="email" type="email">
+                            <input required name="email" id="email" placeholder="alex77@gmail.com" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
 
@@ -443,6 +449,7 @@
                                 <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
                             </div>
                         </div>
+
                     </form>
                 </div>
             </div>
